@@ -1,7 +1,5 @@
-import { House } from 'lucide-react';
-import { History } from 'lucide-react';
-import { Bolt } from 'lucide-react';
-import { Sun } from 'lucide-react';
+import { House, History, Bolt, Sun, Moon } from 'lucide-react';
+
 
 
 import styles from './styles.module.css'
