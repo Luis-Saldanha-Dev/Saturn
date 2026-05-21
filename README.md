@@ -18,8 +18,9 @@ Este projeto foi desenvolvido utilizando:
 ⚛️ React
 📘 TypeScript
 ⚡ Vite
-🎨 CSS / Tailwind (se estiver usando)
+🎨 CSS / Tailwind
 🧹 ESLint
+🎨  Lucid (Icones..)
 📦 Instalação
 
 Clone o projeto:
