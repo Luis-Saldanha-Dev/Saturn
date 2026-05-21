@@ -1,75 +1,62 @@
-# React + TypeScript + Vite
+🪐 Saturn
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Um aplicativo de produtividade baseado na técnica Pomodoro, desenvolvido com React, TypeScript e Vite.
 
-Currently, two official plugins are available:
+O objetivo do Saturn é ajudar você a manter foco, organizar sessões de trabalho e criar uma rotina mais eficiente de estudos ou produtividade.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+✨ Funcionalidades
+⏱️ Temporizador Pomodoro
+▶️ Iniciar, pausar e resetar ciclos
+🌙 Interface moderna e minimalista
+📱 Layout responsivo
+⚡ Performance rápida com Vite
+🔒 Tipagem segura com TypeScript
+🚀 Tecnologias
 
-## React Compiler
+Este projeto foi desenvolvido utilizando:
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+⚛️ React
+📘 TypeScript
+⚡ Vite
+🎨 CSS / Tailwind (se estiver usando)
+🧹 ESLint
+📦 Instalação
 
-Note: This will impact Vite dev & build performances.
+Clone o projeto:
 
-## Expanding the ESLint configuration
+git clone https://github.com/seu-usuario/saturn.git
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Entre na pasta:
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+cd saturn
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+Instale as dependências:
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+npm install
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Inicie o servidor de desenvolvimento:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+npm run dev
+🛠️ Scripts disponíveis
+npm run dev      # inicia o ambiente de desenvolvimento
+npm run build    # gera build de produção
+npm run preview  # visualiza build localmente
+npm run lint     # executa o eslint
+📂 Estrutura do projeto
+src/
+ ├── components/
+ ├── pages/
+ ├── hooks/
+ ├── styles/
+ ├── App.tsx
+ └── main.tsx
+🎯 Objetivo do projeto
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+O Saturn foi criado para praticar conceitos modernos do ecossistema React, incluindo:
+
+Componentização
+Gerenciamento de estado
+Hooks
+Organização de projeto
+Performance com Vite
+TypeScript no frontend
