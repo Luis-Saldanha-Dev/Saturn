@@ -30,4 +30,23 @@ body {
   color: var(--primary);
 
   -webkit-font-smoothing: antialiased;
+<<<<<<< HEAD
+=======
+}
+
+.form{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1.8rem;
+}
+
+.form-row{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1.8rem;
+>>>>>>> master
 }
