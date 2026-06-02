@@ -1,227 +1,37 @@
-/*
-🪐 SATURN THEME
-Tema inspirado em produtividade, foco e espaço.
-Baseado na sua estrutura dinâmica de cores.
-
-Conceito visual:
-- Fundo profundo → espaço/saturno
-- Verde neon → progresso/foco
-- Tons suaves → conforto visual para longas sessões
-- Contraste equilibrado → ideal para Pomodoro
-
-Sugestão de uso:
-- Fundo principal → gray-900
-- Cards/timers → gray-800
-- Timer ativo → primary
-- Pausa curta → info
-- Pausa longa → warning
-- Erros/interrupções → error
-*/
-
 :root {
-  /* =========================================================
-   ESCALA DE CINZA (DARK DEFAULT)
-   ========================================================= */
-
-  --gray-100: #eef2ff;
-  --gray-200: #d9e0f2;
+  --gray-100: #e6e9f0;
+  --gray-200: #cdd3e1;
   --gray-300: #aab3cc;
-  --gray-400: #6b7694;
-  --gray-500: #4b556f;
-  --gray-600: #343c52;
-  --gray-700: #242b3d;
-  --gray-800: #151b29;
-  --gray-900: #080c14;
-  --blue:#6366f140;
+  --gray-400: #555f7d;
+  --gray-500: #454f6a;
+  --gray-600: #363d56;
+  --gray-700: #272f43;
+  --gray-800: #181f2e;
+  --gray-900: #0a0f1a;
 
-  /* =========================================================
-   CORES PRINCIPAIS
-   ========================================================= */
+  --primary-light: #4de7b7;
+  --primary: #0da170;
+  --primary-dark: #065f46;
 
-  --primary-light: #5ff2c3;
-  --primary: #19c37d;
-  --primary-dark: #0c8b5a;
-
-  /*
-   Roxo espacial complementar
-   ótimo para detalhes do timer
-  */
-  --accent: #8b5cf6;
-  --accent-light: #b79cff;
-  --accent-dark: #5b34c9;
-
-  /* =========================================================
-   🔗 LINKS
-   ========================================================= */
-
-  --link-color: #34d399;
-  --link-hover: #10b981;
-
-  /* =========================================================
-   🚦 FEEDBACKS
-   ========================================================= */
+  --link-color: #10b981;
+  --link-hover: #0b8a60;
 
   --success: #22c55e;
-  --warning: #f59e0b;
-  --error: #dc2626;
-  --info: #38bdf8;
+  --warning: #eab308;
+  --error: #991b1b;
+  --info: #0ea5e9;
 
-  /* =========================================================
-   📝 TEXTO
-   ========================================================= */
+  --text-over-primary: #0a0f1a;
+  --text-over-primary-dark: #e6e9f0;
+  --text-over-primary-light: #0a0f1a;
+  --text-over-success: #0a0f1a;
+  --text-over-warning: #0a0f1a;
+  --text-over-error: #e6e9f0;
+  --text-over-info: #0a0f1a;
 
-  --text-default: #eef2ff;
-  --text-muted: #94a3b8;
+  --text-default: #e6e9f0;
+  --text-muted: #aab3cc;
 
-  /*
-   Texto especial para timer
-  */
-  --text-timer: #ffffff;
-
-  /*
-   Texto pequeno/inativo
-  */
-  --text-subtle: #64748b;
-
-  /* =========================================================
-   🎨 TEXTO SOBRE CORES
-   ========================================================= */
-
-  --text-over-primary: #06110d;
-  --text-over-primary-dark: #eef2ff;
-  --text-over-primary-light: #06110d;
-
-  --text-over-success: #06110d;
-  --text-over-warning: #06110d;
-  --text-over-error: #ffffff;
-  --text-over-info: #06110d;
-
-  /* =========================================================
-   🚫 ESTADOS DESATIVADOS
-   ========================================================= */
-
-  --disabled: #475569;
-  --text-disabled: #94a3b8;
-
-  /* =========================================================
-   🪐 ELEMENTOS DO SATURN
-   ========================================================= */
-
-  /*
-   Fundo do timer principal
-  */
-  --timer-bg: linear-gradient(
-    135deg,
-    #0f172a 0%,
-    #111827 45%,
-    #1e293b 100%
-  );
-
-  /*
-   Glow do timer ativo
-  */
-  --timer-glow: 0 0 30px rgba(25, 195, 125, 0.35);
-
-  /*
-   Glow secundário
-  */
-  --timer-glow-accent: 0 0 25px rgba(139, 92, 246, 0.25);
-
-  /*
-   Barra de progresso
-  */
-  --progress-bg: #1e293b;
-  --progress-fill: linear-gradient(
-    90deg,
-    var(--primary),
-    var(--accent)
-  );
-
-  /*
-   Bordas suaves
-  */
-  --border-primary: #243041;
-  --border-secondary: #334155;
-
-  /*
-   Hover padrão
-  */
-  --hover-soft: rgba(255, 255, 255, 0.03);
-
-  /*
-   Overlay/modal
-  */
-  --overlay-bg: rgba(3, 7, 18, 0.75);
-
-  /* =========================================================
-   🔔 TOASTIFY
-   ========================================================= */
-
-  --toastify-color-light: var(--gray-800);
-  --toastify-color-dark: var(--gray-800);
-
-  --toastify-color-info: var(--info);
-  --toastify-color-success: var(--success);
-  --toastify-color-warning: var(--warning);
-  --toastify-color-error: var(--error);
-
-  --toastify-text-color-light: #eef2ff;
-  --toastify-text-color-dark: #eef2ff;
-
-  --toastify-color-progress-light: var(--primary);
-  --toastify-color-progress-dark: var(--primary);
-}
-
-/* =========================================================
-   🌞 LIGHT MODE
-   ========================================================= */
-
-:root[data-theme='light'] {
-  --gray-100: #080c14;
-  --gray-200: #151b29;
-  --gray-300: #242b3d;
-  --gray-400: #343c52;
-  --gray-500: #4b556f;
-  --gray-600: #6b7694;
-  --gray-700: #aab3cc;
-  --gray-800: #dde5f5;
-  --gray-900: #f4f7ff;
-
-  --text-default: #080c14;
-  --text-muted: #475569;
-
-  --link-color: #0f9f67;
-  --link-hover: #0c8b5a;
-
-  --disabled: #cbd5e1;
-  --text-disabled: #64748b;
-
-  /*
-   Fundo do timer no light
-  */
-  --timer-bg: linear-gradient(
-    135deg,
-    #ffffff 0%,
-    #eef2ff 50%,
-    #dde5f5 100%
-  );
-
-  /*
-   Glow reduzido no light
-  */
-  --timer-glow: 0 0 25px rgba(25, 195, 125, 0.18);
-
-  --timer-glow-accent: 0 0 20px rgba(139, 92, 246, 0.15);
-
-  --progress-bg: #dbe4f0;
-
-  --border-primary: #d1d9e6;
-  --border-secondary: #bcc7d9;
-
-  --hover-soft: rgba(0, 0, 0, 0.03);
-
-  --overlay-bg: rgba(15, 23, 42, 0.45);
-
-  --toastify-text-color-light: #080c14;
-  --toastify-text-color-dark: #eef2ff;
+  --disabled: #555f7d;
+  --text-disabled: #aab3cc;
 }

@@ -1,61 +1,46 @@
-import { Container } from './components/container';
-//import { Heading } from './components/Heading';
+import { Container } from './components/Container';
 import { Logo } from './components/Logo';
+import './styles/theme.css';
+import './styles/global.css';
 import { Menu } from './components/Menu';
 import { CountDown } from './components/CountDown';
-import { DefaltInput } from './components/DefaltInput';
-
-import './styles/theme.css'
-import './styles/global.css'
+import { DefaultInput } from './components/DefaultInput';
 
 export function App() {
-  console.log(19)
-
   return (
     <>
-      <Container><Logo /></Container>
-      <Container><Menu /></Container>
-      <Container><CountDown /></Container>
       <Container>
-        <form className='form' action="">
-          <div className='form-row'>
-            <DefaltInput id='MeuInput' type='text' />
+        <Logo />
+      </Container>
+
+      <Container>
+        <Menu />
+      </Container>
+
+      <Container>
+        <CountDown />
+      </Container>
+
+      <Container>
+        <form className='form' action=''>
+          <div className='formRow'>
+            <DefaultInput labelText='task' id='meuInput' type='text' />
           </div>
 
-          <div className="form-row">
+          <div className='formRow'>
             <p>Lorem ipsum dolor sit amet.</p>
           </div>
 
-          <div className="form-row">
+          <div className='formRow'>
             <p>Ciclos</p>
             <p>0 0 0 0 0 0 0</p>
           </div>
 
-          <div className="form-row">
+          <div className='formRow'>
             <button>Enviar</button>
           </div>
         </form>
       </Container>
     </>
-  )
-}
-import { Container } from './components/Container';
-import { Heading } from './components/Heading';
-import { Logo } from './components/Logo';
-import { Menu } from './components/Menu';
-
-import './styles/theme.css'
-import './styles/global.css'
-
-export function App() {
-  console.log(19)
-
-  return (
-    <>
-    <Container><Logo /></Container>
-    <Container><Menu /></Container>
-    <Heading>Ti</Heading>
-    <Container>Olá</Container>
-    </>
-  )
+  );
 }
