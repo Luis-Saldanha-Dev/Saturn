@@ -17,10 +17,6 @@ input:focus {
   border-radius: 0.6rem;
 }
 
-input::placeholder {
-  color: var(--text-default);
-}
-
 input:disabled {
   color: var(--disabled);
   border-bottom: 0.2rem solid var(--disabled);

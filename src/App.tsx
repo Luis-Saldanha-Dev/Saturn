@@ -1,10 +1,12 @@
 import { Container } from './components/Container';
 import { Logo } from './components/Logo';
-import './styles/theme.css';
-import './styles/global.css';
 import { Menu } from './components/Menu';
 import { CountDown } from './components/CountDown';
 import { DefaultInput } from './components/DefaultInput';
+import { Cycles } from './components/Cycles';
+
+import './styles/theme.css';
+import './styles/global.css';
 
 export function App() {
   return (
@@ -36,8 +38,7 @@ export function App() {
           </div>
 
           <div className='formRow'>
-            <p>Ciclos</p>
-            <p>0 0 0 0 0 0 0</p>
+            <Cycles />
           </div>
 
           <div className='formRow'>
