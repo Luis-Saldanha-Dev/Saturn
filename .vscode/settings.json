@@ -1,11 +1,11 @@
 {
   "window.zoomLevel": 1,
   "breadcrumbs.enabled": false,
-  "editor.fontSize": 16,
+  "editor.fontSize": 14,
   "debug.console.fontSize": 12,
   "terminal.integrated.fontSize": 12,
   "editor.glyphMargin": false,
-  "workbench.activityBar.location": "default",
+  "workbench.activityBar.location": "bottom",
   "editor.lineNumbers": "on",
   "files.eol": "\n", // Final de linha sempre será LF
   "workbench.editor.labelFormat": "short",
