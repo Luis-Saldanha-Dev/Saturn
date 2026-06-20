@@ -6,7 +6,7 @@ export function Tips() {
   const { state } = useTaskContext();
 
   const nextCycle = getNextCycle(state.currentCycle);
-    const nextCycleType = getNextCycleType(nextCycle);
+  const nextCycleType = getNextCycleType(nextCycle);
 
   //tips
   const tipsForWhenActiveTask = {

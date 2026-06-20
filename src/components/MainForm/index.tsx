@@ -65,7 +65,7 @@ export function MainForm() {
       </div>
 
       <div className='formRow'>
-        <Tips/>
+        <Tips />
       </div>
 
       {state.currentCycle > 0 && (
