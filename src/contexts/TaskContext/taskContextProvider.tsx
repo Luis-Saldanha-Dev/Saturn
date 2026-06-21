@@ -18,7 +18,6 @@ export function TaskContextProvider({ children }: TaskContextProviderProps) {
 
   worker.onmessage(e => {
     const countDownSeconds = e.data;
-    console.log(countDownSeconds);
 
     if (countDownSeconds <= 0) {
       if (playBeepRef.current) {
