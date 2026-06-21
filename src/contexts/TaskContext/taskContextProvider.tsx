@@ -4,7 +4,7 @@ import { TaskContext } from './taskContext';
 import { taskReducer } from './taskReducer';
 import { TimerWorkerManager } from '../../workers/timerWorkerManager';
 import { TaskActionTypes } from './taskActions';
-import { loadBeep } from '../../utils/loadbeep';
+import { loadBeep } from '../../utils/loadBeep';
 
 type TaskContextProviderProps = {
   children: React.ReactNode;
