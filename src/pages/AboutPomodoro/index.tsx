@@ -1,6 +1,7 @@
 import { Container } from '../../components/Container';
 import { GenericHTML } from '../../components/GenericHtml';
 import { Heading } from '../../components/Heading';
+import { RouterLink } from '../../components/RouterLink';
 import { MainTemplate } from '../../templates/MainTemplate';
 
 export function AboutPodomodoro() {
@@ -49,7 +50,7 @@ export function AboutPodomodoro() {
           <h3>⚙️ Personalização do tempo</h3>
           <p>
             Você pode configurar o tempo de foco, descanso curto e descanso longo do jeito
-            que quiser! Basta acessar a <a href='/settings'>página de configurações</a> e
+            que quiser! Basta acessar a <RouterLink href='/settings'>página de configurações</RouterLink> e
             ajustar os minutos como preferir.
           </p>
 
@@ -93,7 +94,7 @@ export function AboutPodomodoro() {
           <h3>📊 Histórico automático</h3>
           <p>
             Todas as suas tarefas e ciclos concluídos ficam salvos no{' '}
-            <a href='/history'>histórico</a>, com status de completas ou interrompidas.
+            <RouterLink href='/history'>histórico</RouterLink>, com status de completas ou interrompidas.
             Assim, você consegue acompanhar sua evolução ao longo do tempo.
           </p>
 
@@ -107,7 +108,7 @@ export function AboutPodomodoro() {
 
           <p>
             <strong>Pronto pra focar?</strong> Bora lá{' '}
-            <a href='/'>voltar para a página inicial</a> e iniciar seus Pomodoros! 🍅🚀
+            <RouterLink href='/'>voltar para a página inicial</RouterLink> e iniciar seus Pomodoros! 🍅🚀
           </p>
 
           <p>
