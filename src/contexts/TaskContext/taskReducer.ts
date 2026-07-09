@@ -52,7 +52,7 @@ export function taskReducer(
       };
     }
     case TaskActionTypes.RESET: {
-      return { ...initialTaskState };
+      return { ...initialTaskState, config: state.config };
     }
     case TaskActionTypes.COUNT_DOWN: {
       return {
@@ -62,6 +62,9 @@ export function taskReducer(
           action.payload.secondsRemaining,
         ),
       };
+    }
+    case TaskActionTypes.CHANGE_SETTINGS: {
+      return { ...state, config: { ...action.payload } };
     }
   }
 

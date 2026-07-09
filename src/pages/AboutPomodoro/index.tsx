@@ -4,7 +4,13 @@ import { Heading } from '../../components/Heading';
 import { RouterLink } from '../../components/RouterLink';
 import { MainTemplate } from '../../templates/MainTemplate';
 
+import samurai from '../../../public/images/midia/Samurai meditating.jpg';
+import { useEffect } from 'react';
+
 export function AboutPodomodoro() {
+  useEffect(() => {
+    document.title = 'Entenda a Técnica Pomodoro - Saturn Pomodoro';
+  }, []);
   return (
     <MainTemplate>
       <Container>
@@ -19,7 +25,7 @@ export function AboutPodomodoro() {
             cansaço mental.
           </p>
 
-          <img src='https://placehold.co/1920x1080' alt='' />
+          <img src={samurai} alt='' />
 
           <h2>Como funciona o Pomodoro tradicional?</h2>
           <ul>

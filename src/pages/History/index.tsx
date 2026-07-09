@@ -34,6 +34,10 @@ export function History() {
   }, [confirmClearHistory, dispatch]);
 
   useEffect(() => {
+    document.title = 'Histórico - Saturn Pomodoro';
+  }, []);
+
+  useEffect(() => {
     return () => {
       showMessage.dismiss();
     };
