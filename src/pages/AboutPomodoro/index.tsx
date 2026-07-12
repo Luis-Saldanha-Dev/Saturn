@@ -7,7 +7,7 @@ import { MainTemplate } from '../../templates/MainTemplate';
 import samurai from '../../../public/images/midia/Samurai meditating.jpg';
 import { useEffect } from 'react';
 
-export function AboutPodomodoro() {
+export function AboutPomodoro() {
   useEffect(() => {
     document.title = 'Entenda a Técnica Pomodoro - Saturn Pomodoro';
   }, []);
