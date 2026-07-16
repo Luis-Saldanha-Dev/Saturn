@@ -45,7 +45,7 @@ export function AboutPomodoro() {
           </ul>
 
           <h2>
-            Mas no <strong>Chronos Pomodoro</strong> tem um diferencial 🚀
+            Mas no <strong>Saturn Pomodoro</strong> tem um diferencial 🚀
           </h2>
 
           <p>
